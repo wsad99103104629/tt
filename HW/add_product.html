@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new product</title>
+	<style>
+	.button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		align-self:right;
+		float: right;
+	}
+	.table{
+	border-style:solid;
+	border-color:#98bf21;
+	align-self: center;
+	align-items: center;
+	width: "12%";
+	height: "20%";
+	}
+	</style>
+</head>
+<h1 align="center">Hello admin user, you can add a new product into database!</h1>
+<body>
+	<form action="add_product.php" method="post">
+		<table align="center" class = "table" border="1">
+        	<th>Product Name</th>
+        	<th>Product Brand</th>
+        	<th>Product Type</th>
+        	<th>Product Price</th>
+        	<th>Product Inventory</th>
+        	<th>Product Description</th>
+        	<th>Product Color</th>
+        	<th>Product Url</th>
+			<tr>
+				<td><input type="text" name="name"></td>
+				<td><input type="text" name="brand"></td>
+				<td><input type="text" name="type"></td>
+				<td><input type="text" name="price"></td>
+				<td><input type="text" name="inventory"></td>
+				<td><input type="text" name="descr"></td>
+				<td><input type="text" name="color"></td>
+				<td><input type="text" name="url"></td>
+			</tr>
+		</table>
+		<input type="submit" class = "button" name="submit" value="Submit">
+	</form>    
+</body>
+</html>
